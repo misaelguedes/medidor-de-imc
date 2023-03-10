@@ -7,7 +7,7 @@ function calcular() {
     let imc = kg / (alt ^ 2)
 
     if (peso.value.length == 0 && altura.value.length == 0) {
-        window.alert('Por favor, digite um número!')
+        window.alert('Por favor, digite o peso e a altura!')
     } else if (peso.value.length == 0) {
         window.alert('Por favor, digite o peso!')
     } else if (altura.value.length == 0) {

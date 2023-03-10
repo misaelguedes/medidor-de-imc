@@ -26,6 +26,7 @@ section {
 input.button {
     width: 100px;
     border-radius: 10px;
+    padding: 4px 0px;
 }
 
 div img {

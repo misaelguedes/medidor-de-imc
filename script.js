@@ -6,27 +6,34 @@ function calcular() {
     let alt = (altura.value)
     let imc = kg / (alt ^ 2)
 
-    res.innerHTML = `IMC: ${imc.toFixed(2).replace('.', ',')} <br>`
-
-    if (imc < 17) {
+    if (peso.value.length == 0 || altura.value.length == 0) {
+        window.alert('Por favor, digite um número!')
+    } else if (imc < 17) {
+        res.innerHTML = `IMC: ${imc.toFixed(2).replace('.', ',')} <br>`
         res.innerHTML += 'STATUS: MUITO ABAIXO DO PESO'
         res.style.color = 'red'
     } else if (imc < 18.5) {
+        res.innerHTML = `IMC: ${imc.toFixed(2).replace('.', ',')} <br>`
         res.innerHTML += 'STATUS: ABAIXO DO PESO'
         res.style.color = 'rgb(182, 182, 0)'
     } else if (imc < 25) {
+        res.innerHTML = `IMC: ${imc.toFixed(2).replace('.', ',')} <br>`
         res.innerHTML += 'STATUS: PESO IDEAL'
         res.style.color = 'green'
     } else if (imc < 30) {
+        res.innerHTML = `IMC: ${imc.toFixed(2).replace('.', ',')} <br>`
         res.innerHTML += 'STATUS: SOBREPESO'
         res.style.color = 'rgb(182, 182, 0)'
     } else if (imc < 35) {
+        res.innerHTML = `IMC: ${imc.toFixed(2).replace('.', ',')} <br>`
         res.innerHTML += 'STATUS: OBESIDADE'
         res.style.color = 'red'
     } else if (imc < 40) {
+        res.innerHTML = `IMC: ${imc.toFixed(2).replace('.', ',')} <br>`
         res.innerHTML += 'STATUS: OBESIDADE SEVERA'
         res.style.color = 'red'
     } else {
+        res.innerHTML = `IMC: ${imc.toFixed(2).replace('.', ',')} <br>`
         res.innerHTML += 'STATUS: OBESIDADE MÓRBIDA'
         res.style.color = 'red'
     }
